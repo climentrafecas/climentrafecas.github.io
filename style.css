@@ -6,3 +6,10 @@ body {
 .social-icons i {
   color: white;
 }
+.centro-contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 30px;
+}
