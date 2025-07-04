@@ -4,8 +4,20 @@ body {
   color: white;
 }
 
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.social-icons a {
+  text-decoration: none;
+}
+
 .social-icons i {
   color: white;
+  font-size: 2em;
 }
 
 .centro-contenedor {
@@ -24,4 +36,14 @@ body {
 
 .intro {
   text-align: left;
+  font-size: 2rem;
+}
+
+.intro ul {
+  padding-left: 0;
+  list-style-position: inside;   
+}
+
+.cyan {
+  color: cyan;
 }
