@@ -3,13 +3,25 @@ body {
   margin: 0;
   color: white;
 }
+
 .social-icons i {
   color: white;
 }
+
 .centro-contenedor {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  text-align: center;
-  margin-top: 30px;
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.centro-contenedor img {
+  max-width: 200px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.intro {
+  text-align: left;
 }
