@@ -20,9 +20,11 @@
         <li>Tecnologías dominadas</li>
         <li>Proyectos destacados</li>
       </ul>
-      <p><span id="correo" class="correo-destacado">contacto@climent-rafecas.com</span></p>
-      <div id="mensaje-copiado">¡Copiado!</div>
-      <a href="CVClimentRafecas.pdf" download class="btn-descarga">Descargar CV</a>
+      <div class="contenedor-copiado">
+        <p><span id="correo" class="correo-destacado">contacto@climent-rafecas.com</span></p>
+        <div id="mensaje-copiado">¡Copiado!</div>
+      </div>
+      <a href="CVClimentRafecas.pdf" class="btn-descarga" target="_blank">Descargar CV</a>
       </section>
     </div>
     <div class="social-icons">
@@ -33,6 +35,10 @@
         <i class="fab fa-linkedin fa-2x"></i>
       </a>
     </div>
+    <section class="presentacion-personal">
+      <h2>Algo acerca de mi...</h2>
+      <p>Con 18 años de experiencia industrial en empresas de alto nivel, he liderado equipos y trabajado como oficial de producción, colaborando estrechamente con los departamentos de informática e innovación. Actualmente, estoy en plena transición hacia el mundo de los datos y la inteligencia artificial, con fuerte interés en la programación, la automatización y el desarrollo tecnológico. Me definen la alta motivación, la autonomía, la adaptabilidad demostrada y una sólida capacidad para trabajar en equipo.</p>
+    </section>
     <script>
       const correo = document.getElementById('correo');
       const mensaje = document.getElementById('mensaje-copiado')
@@ -40,13 +46,14 @@
       correo.addEventListener('click', () => {
         navigator.clipboard.writeText(correo.textContent).then(() => {
           const rect = correo.getBoundingClientRect();
-          mensaje.style.left = `${rect.left}px`;
-          mensaje.style.top = `${rect.bottom + window.scrollY + 5}px`;
           mensaje.style.opacity = 1;
           setTimeout(() => {
             mensaje.style.opacity = 0;
           }, 2000);
         });
+      });
+    document.querySelector('.btn-descarga').addEventListener('click', function() {
+      this.classList.add('clicked');
       });
     </script>
   </body>

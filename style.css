@@ -1,23 +1,38 @@
 body {
   background-color: black;
-  margin: 0;
+  margin: 150px;
   color: white;
 }
 
 .social-icons {
   display: flex;
   justify-content: center;
-  gap: 30px;
-  margin-top: 30px;
+  gap: 45px;
+  margin-top: 60px;
+  animation: fadeInUp 0.8s ease-out forwards;
+  opacity: 0;
 }
 
 .social-icons a {
   text-decoration: none;
+  color: white;
 }
 
 .social-icons i {
-  color: white;
-  font-size: 2em;
+  font-size: 3em;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: inherit;
+}
+
+.social-icons a[href*="github"]:hover {
+  color: #6e40c9;
+}
+
+.social-icons a[href*="linkedin"]:hover {
+  color: #0077b5;
 }
 
 .btn-descarga {
@@ -32,17 +47,23 @@ body {
   text-decoration: none;
   transition: all 0.3s ease;
   margin-top: 20px;
+  animation: guiño 2s ease-in-out infinite;
 }
 
 .btn-descarga:hover {
   background-color: cyan;
   color: black;
   box-shadow: 0 0 10px cyan, 0 0 20px cyan;
+  animation: none !important;
 }
 
 .btn-descarga:active {
   transform: scale(0.98);
   box-shadow: 0 0 5px cyan;
+}
+
+.btn-descarga.clicked {
+  animation: none !important;
 }
 
 .centro-contenedor {
@@ -51,6 +72,8 @@ body {
   align-items: center;
   gap: 120px;
   margin-top: 50px;
+  animation: fadeInUp 0.8s ease-out forwards;
+  opacity: 0;
 }
 
 .centro-contenedor img {
@@ -86,6 +109,9 @@ body {
 
 #mensaje-copiado {
   position: absolute;
+  top: -35px;
+  left: 50%;
+  transform: translateX(-50%);
   background-color: #333;
   color: white;
   padding: 8px 14px;
@@ -94,6 +120,30 @@ body {
   opacity: 0;
   transition: opacity 0.3s ease;
   z-index: 10;
-  transform: translateY(10px);
   pointer-events: none;
+}
+
+.contenedor-copiado {
+  position: relative;
+  display: incline-block;
+}
+
+@keyframes guiño {
+  0%, 100% {
+    box-shadow: 0 0 5px cyan;
+  }
+  50% {
+    box-shadow: 0 0 15px cyan;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
