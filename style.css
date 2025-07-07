@@ -20,23 +20,49 @@ body {
   font-size: 2em;
 }
 
+.btn-descarga {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: transparent;
+  border: 2px solid cyan;
+  color: cyan;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+}
+
+.btn-descarga:hover {
+  background-color: cyan;
+  color: black;
+  box-shadow: 0 0 10px cyan, 0 0 20px cyan;
+}
+
+.btn-descarga:active {
+  transform: scale(0.98);
+  box-shadow: 0 0 5px cyan;
+}
+
 .centro-contenedor {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 40px;
+  gap: 120px;
   margin-top: 50px;
 }
 
 .centro-contenedor img {
-  max-width: 200px;
+  max-width: 300px;
   height: auto;
   border-radius: 10px;
 }
 
 .intro {
   text-align: left;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  font-family: 'Libertinus Math', serif;
 }
 
 .intro ul {
@@ -46,4 +72,28 @@ body {
 
 .cyan {
   color: cyan;
+}
+
+.correo-destacado {
+  color: cyan;
+  cursor: pointer;
+  transition: font-weight 0.2s ease;
+}
+
+.correo-destacado:hover {
+  font-weight: bold;
+}
+
+#mensaje-copiado {
+  position: absolute;
+  background-color: #333;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 1rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 10;
+  transform: translateY(10px);
+  pointer-events: none;
 }
