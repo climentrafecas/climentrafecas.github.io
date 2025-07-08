@@ -81,6 +81,25 @@ body {
   list-style-position: inside;   
 }
 
+.nucleo-lenguajes {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 3px solid cyan;
+  color:black;
+  font-family: inherit;
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  box-shadow: 0 0 15px cyan, 0 0 30px cyan;
+  animation: resplandor 2s ease-in-out infinite;
+  margin: 50px auto;
+  text-align: center;
+}
+
 .presentacion-personal {
   font-size: 1.7rem;
   line-height: 1.8;
@@ -120,6 +139,14 @@ body {
   color: #0077b5;
 }
 
+.tecnologias-dominadas {
+  font-size: 1.7rem;
+  line-height: 1.8;
+  text-align: justify;
+  margin-top: 300px;
+  font-family: 'Libertinus Math', serif;
+}
+
 #mensaje-copiado {
   position: absolute;
   top: -35px;
@@ -153,5 +180,14 @@ body {
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes resplandor {
+  0%, 100% {
+    box-shadow: 0 0 10px cyan, 0 0 20px cyan;
+  }
+    50% {
+      box-shadow: 0 0 25px cyan, 0 0 50px cyan;
   }
 }
