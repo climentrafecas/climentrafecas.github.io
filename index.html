@@ -23,7 +23,7 @@
       <div class="contenedor-copiado">
         <p><span id="correo" class="correo-destacado">contacto@climent-rafecas.com</span></p>
         <div id="mensaje-copiado">¡Copiado!</div>
-      </div>
+    </div>
       <a href="CVClimentRafecas.pdf" class="btn-descarga" target="_blank">Descargar CV</a>
       </section>
     </div>
@@ -55,6 +55,8 @@
     document.querySelector('.btn-descarga').addEventListener('click', function() {
       this.classList.add('clicked');
       });
+    window.history.scrollRestoration = "manual";
+    window.scrollTo(0, 0);
     </script>
   </body>
 </html>

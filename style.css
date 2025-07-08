@@ -1,47 +1,16 @@
 body {
   background-color: black;
-  margin: 150px;
+  margin: 80px;
   color: white;
-}
-
-.social-icons {
-  display: flex;
-  justify-content: center;
-  gap: 45px;
-  margin-top: 60px;
-  animation: fadeInUp 0.8s ease-out forwards;
-  opacity: 0;
-}
-
-.social-icons a {
-  text-decoration: none;
-  color: white;
-}
-
-.social-icons i {
-  font-size: 3em;
-  transition: color 0.3s ease;
-}
-
-.social-icons a:hover {
-  color: inherit;
-}
-
-.social-icons a[href*="github"]:hover {
-  color: #6e40c9;
-}
-
-.social-icons a[href*="linkedin"]:hover {
-  color: #0077b5;
 }
 
 .btn-descarga {
   display: inline-block;
-  padding: 12px 24px;
+  padding: 16px 32px;
   background-color: transparent;
   border: 2px solid cyan;
   color: cyan;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: bold;
   border-radius: 6px;
   text-decoration: none;
@@ -77,24 +46,14 @@ body {
 }
 
 .centro-contenedor img {
-  max-width: 300px;
+  width: 400px;
   height: auto;
   border-radius: 10px;
 }
 
-.intro {
-  text-align: left;
-  font-size: 1.5rem;
-  font-family: 'Libertinus Math', serif;
-}
-
-.intro ul {
-  padding-left: 0;
-  list-style-position: inside;   
-}
-
-.cyan {
-  color: cyan;
+.contenedor-copiado {
+  position: relative;
+  display: incline-block;
 }
 
 .correo-destacado {
@@ -105,6 +64,60 @@ body {
 
 .correo-destacado:hover {
   font-weight: bold;
+}
+
+.cyan {
+  color: cyan;
+}
+
+.intro {
+  text-align: left;
+  font-size: 2rem;
+  font-family: 'Libertinus Math', serif;
+}
+
+.intro ul {
+  padding-left: 0;
+  list-style-position: inside;   
+}
+
+.presentacion-personal {
+  font-size: 1.7rem;
+  line-height: 1.8;
+  text-align: justify;
+  margin-top: 300px;
+  font-family: 'Libertinus Math', serif;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 45px;
+  margin-top: 60px;
+  animation: fadeInUp 0.8s ease-out forwards;
+  opacity: 0;
+}
+
+.social-icons a {
+  text-decoration: none;
+  color: white;
+}
+
+.social-icons i {
+  font-size: 4em;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: inherit;
+}
+
+.social-icons a[href*="github"]:hover {
+  color: #6e40c9;
+}
+
+.social-icons a[href*="linkedin"]:hover {
+  color: #0077b5;
 }
 
 #mensaje-copiado {
@@ -121,11 +134,6 @@ body {
   transition: opacity 0.3s ease;
   z-index: 10;
   pointer-events: none;
-}
-
-.contenedor-copiado {
-  position: relative;
-  display: incline-block;
 }
 
 @keyframes guiño {
