@@ -35,6 +35,16 @@ body {
   animation: none !important;
 }
 
+.categoria-texto {
+  position: absolute;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .centro-contenedor {
   display: flex;
   justify-content: center;
@@ -81,15 +91,20 @@ body {
   list-style-position: inside;   
 }
 
+.icono .etiqueta {
+  font-size: 0.9rem;
+  color: cyan;
+  margin-top: 4px;
+  line-height: 1;
+  font-family: 'Libertinus Math', serif;
+}
+
 .nucleo-lenguajes {
-  width: 160px;
-  height: 160px;
+  width: 400px;
+  height: 400px;
   border-radius: 50%;
   border: 3px solid cyan;
-  color:cyan;
   font-family: inherit;
-  font-size: 1.2rem;
-  font-weight: bold;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -98,6 +113,21 @@ body {
   animation: resplandor 2s ease-in-out infinite;
   margin: 50px auto;
   text-align: center;
+  position: relative;
+}
+
+.nucleo-lenguajes .icono {
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  color: cyan;
+  font-size: 2rem;
+  transform: rotate(calc(var(--i) * 60deg)) translate(100px) rotate(calc(var(--i) * -60deg));
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
 }
 
 .presentacion-personal {
