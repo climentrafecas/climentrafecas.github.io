@@ -349,6 +349,75 @@ body {
   font-family: 'Libertinus Math', serif;
 }
 
+.proyectos-destacados {
+  font-size: 1.7rem;
+  line-height: 1.8;
+  text-align: justify;
+  margin-top: 300px;
+  font-family: 'Libertinus Math', serif;
+}
+
+.grid-proyectos {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(300px, 1fr));
+  gap: 300px 50px;
+  padding: 60px 40px;
+  justify-items: center;
+}
+
+.tarjeta-proyecto {
+  width: 100%;
+  max-width: 700px;
+  padding: 25px;
+  margin: 15px 0;
+  border-radius: 20px;
+  box-shadow: 0 0 25px cyan;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  position: relative;
+}
+
+.tarjeta-proyecto img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.nombre-proyecto {
+  font-weight: bold;
+  font-size: 1.8rem;
+  color: cyan;
+  position: absolute;
+  top: -90px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: black;
+  padding: 4px 8px;
+}
+
+.tecnologias-utilizadas {
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 1.2rem;
+}
+
+.descripcion-proyecto {
+  position: absolute;
+  bottom: -120px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 1.2rem;
+  max-width: 100%;
+  width: 80%;
+  text-align: center;
+}
+
 .social-icons {
   display: flex;
   justify-content: center;
