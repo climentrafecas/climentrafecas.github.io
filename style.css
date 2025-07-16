@@ -371,7 +371,9 @@ body {
   padding: 25px;
   margin: 15px 0;
   border-radius: 20px;
-  box-shadow: 0 0 25px cyan;
+  box-shadow: none;
+  background-color: transparent;
+  border: none;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -385,12 +387,32 @@ body {
   border-radius: 12px;
 }
 
+.recuadro-imagen {
+  display: block;
+  padding: 0;
+  margin: 0;
+  line-height: 0;
+  border: none;
+  box-shadow: 0 0 25px cyan;
+  background-color: black;
+  border-radius: 12px;
+  width: fit-content;
+  margin-inline: auto;
+}
+
+.recuadro-imagen img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
 .nombre-proyecto {
   font-weight: bold;
   font-size: 1.8rem;
   color: cyan;
   position: absolute;
-  top: -90px;
+  top: -70px;
   left: 50%;
   transform: translateX(-50%);
   background-color: black;
@@ -402,13 +424,36 @@ body {
   bottom: -40px;
   left: 50%;
   transform: translateX(-50%);
-  color: white;
   font-size: 1.2rem;
+}
+
+.icon-html {
+  color: #e34c26;
+}
+
+.icon-css {
+  color: #2965f1;
+}
+
+.icon-js {
+  color: #f0db4f;
+}
+
+.icon-trello {
+  color: #0079bf;
+}
+
+.tecnologias-utilizadas .icono .etiquetas-tutilizadas {
+  color: white !important;
+}
+
+.tecnologias-utilizadas .icono {
+  margin-right: 1.5rem;
 }
 
 .descripcion-proyecto {
   position: absolute;
-  bottom: -120px;
+  bottom: -130px;
   left: 50%;
   transform: translateX(-50%);
   color: white;
