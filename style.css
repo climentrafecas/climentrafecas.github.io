@@ -393,11 +393,26 @@ body {
   margin: 0;
   line-height: 0;
   border: none;
-  box-shadow: 0 0 25px cyan;
+  box-shadow: 0 0 15px cyan, 0 0 30px cyan;
   background-color: black;
   border-radius: 12px;
   width: fit-content;
   margin-inline: auto;
+  transition: box-shadow 0.2s ease-in-out, transform 0.6s ease;
+  animation: pulse 2.5s infinite ease-in-out;
+  animation-play-state: running; 
+  animation-duration: 2.5s;
+  position: relative;
+}
+
+.recuadro-imagen:hover {
+  animation-duration: 12s;
+  box-shadow: 0 0 20px cyan, 0 0 40px cyan, 0 0 60px cyan;
+}
+
+.recuadro-imagen:active {
+  box-shadow: 0 0 8px cyan, 0 0 16px cyan;
+  transition: box-shadow 0.1s ease;
 }
 
 .recuadro-imagen img {
@@ -405,6 +420,11 @@ body {
   width: 100%;
   height: auto;
   border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.recuadro-imagen:hover img {
+  transform: scale(1.05);
 }
 
 .nombre-proyecto {
