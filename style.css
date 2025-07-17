@@ -532,6 +532,44 @@ body {
   font-family: 'Libertinus Math', serif;
 }
 
+.repositorio {
+  text-align: center;
+  margin-top: 6rem;
+}
+
+.enlace-proyectos {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 2rem;
+  text-decoration: none;
+  transition: transform 0.3s ease, filter 0.3s ease, color 3s ease-in-out;
+  animation: latido 8s infinite ease-in-out;
+  animation-play-state: running;
+  will-change: filter, transform;
+}
+
+.enlace-proyectos:hover {
+  animation-play-state: paused;
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 10px currentColor) !important;
+}
+
+.enlace-proyectos:active {
+  transform: scale(0.97);
+  animation-play-state: paused;
+  filter: none;
+}
+
+.animacion-detenida {
+  animation: none !important;
+  filter: none !important;
+  transform: none !important;
+}
+
+.enlace-proyectos.animacion-detenida {
+  color: inherit !important;
+}
+
 #mensaje-copiado {
   position: absolute;
   top: -35px;
@@ -565,5 +603,36 @@ body {
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes latido {
+  0% {
+    color: white;
+    filter: drop-shadow(0 0 0px white);
+  }
+  20% {
+    color: white;
+    filter: drop-shadow(0 0 8px white);
+  }
+  40% {
+    color: #d5ffff;
+    filter: drop-shadow(0 0 4px #d5ffff);
+  }
+  50% {
+    color: cyan;
+    filter: drop-shadow(0 0 0px cyan);
+  }
+  70% {
+    color: cyan;
+    filter: drop-shadow(0 0 8px cyan);
+  }
+  90% {
+    color: #aefeff;
+    filter: drop-shadow(0 0 2px #aefeff);
+  }
+  100% {
+    color: white;
+    filter: drop-shadow(0 0 0px white);
   }
 }

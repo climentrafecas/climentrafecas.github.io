@@ -241,6 +241,9 @@
           <div class="descripcion-proyecto"><p>Web personal desarrollada desde cero como portafolio profesional, donde ofrezco una breve presentación, muestro mis trabajos y conocimientos</p></div>
         </div>
       </div>
+      <div class="repositorio">
+        <a href="https://github.com/climentrafecas?tab=repositories" target="_blank" class="enlace-proyectos" id="enlaceProyectos">Ver todos los proyectos</a>
+      </div>
     </section>
     <script>
       const correo = document.getElementById('correo');
@@ -260,6 +263,9 @@
       });
     window.history.scrollRestoration = "manual";
     window.scrollTo(0, 0);
+    document.getElementById('enlaceProyectos').addEventListener('click', function () {
+      this.classList.add('animacion-detenida');
+    });
     </script>
   </body>
 </html>
