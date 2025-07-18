@@ -1,6 +1,55 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: black;
   margin: 80px;
+  color: white;
+}
+
+.idioma-selector {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 999;
+  display: flex;
+  gap: 0.5rem;
+  pointer-events: auto;
+}
+
+.idioma-btn {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: white;
+  border: none;
+  padding: 0.3rem 0.6rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.idioma-btn:hover {
+  background-color: rgba(0, 255, 255, 0.2);
+  color: cyan;
+}
+
+.idioma-btn:focus {
+  outline: none;
+}
+
+.presentacionli {
+  text-decoration: none;
+  color: white;
+}
+
+.tecnologiasli {
+  text-decoration: none;
+  color: white;
+}
+
+.proyectosli {
+  text-decoration: none;
   color: white;
 }
 
@@ -585,6 +634,29 @@ body {
   z-index: 10;
   pointer-events: none;
 }
+
+#btnInicio {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 45px;
+  height: 45px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: cyan;
+  border: 1px solid cyan;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: opasity 0.4s ease, visibility 0.4s ease;
+  z-index: 1000;
+}
+
+#btnInicio:hover {
+  background-color: rgba(0, 255, 255, 0.2);
+  box-shadow: 0 0 10px cyan;
+  }
 
 @keyframes guiño {
   0%, 100% {
