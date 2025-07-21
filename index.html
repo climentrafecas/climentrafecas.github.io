@@ -39,11 +39,11 @@
         <i class="fab fa-linkedin fa-2x"></i>
       </a>
     </div>
-    <section class="presentacion-personal" id="presentacion">
+    <section class="presentacion-personal seccion" id="presentacion">
       <h2 data-i18n="acercaDe"><span class="cyan">Algo acerca de mi...</span></h2>
       <p data-i18n="presentacion">Con 18 años de experiencia en el sector industrial, he trabajado como oficial de producción y liderado equipos en empresas de alto nivel, colaborando muy activamente con los departamentos de informática e innovación. Actualmente, estoy en plena transición profesional hacia el ámbito puramente tecnológico, formándome como Técnico Superior en Desarrollo de Aplicaciones Multiplataforma (DAM) como base sólida para este cambio. Mi objetivo es especializarme en el mundo de los datos y la inteligencia artificial, combinándolo con mi fuerte interés en la programación, la automatización y el desarrollo tecnológico. Me definen la alta motivación, el temperamento resiliente, las ganas de seguir aprendiendo, la autonomía y una demostrada facilidad de adaptación. Poseo además un perfil polivalente y una sólida capacidad para trabajar en equipo. Gracias a mi experiencia en entornos colaborativos, he podido aprender y aplicar metodologías de gestión de proyectos como Scrum o Kanban y principios de mejora continua como Lean Manufacturing y Six Sigma, desarrollado habilidades de organización, comunicación y gestión de proyectos, esenciales y totalmente trasladables a mi transición al mundo tech.</p>
     </section>
-     <section class="tecnologias-dominadas">
+    <section class="tecnologias-dominadas seccion">
       <h2 data-i18n="tecnologias-trabajadas"><span class="cyan" id="tecnologias">Tecnologías trabajadas</span></h2>
       <div class="contenedor-esferas">
         <div class="esferas-superiores">
@@ -171,9 +171,9 @@
         </div>
       </div>
     </section>
-    <section class="proyectos-destacados" id="proyectos">
+    <section class="proyectos-destacados seccion" id="proyectos">
       <h2 data-i18n="proyectosD"><span class="cyan">Proyectos destacados</span></h2>
-      <div class="grid-proyectos">
+      <div class="grid-proyectos seccion">
         <div class="tarjeta-proyecto">
           <div class="nombre-proyecto" data-i18n="tituloPP">Portafolio profesional</div>
           <div class="recuadro-imagen">
@@ -269,98 +269,112 @@
           }, 2000);
         });
       });
-    document.querySelector('.btn-descarga').addEventListener('click', function() {
-      this.classList.add('clicked');
+      document.querySelector('.btn-descarga').addEventListener('click', function() {
+        this.classList.add('clicked');
       });
-    window.history.scrollRestoration = "manual";
-    window.scrollTo(0, 0);
-    document.getElementById('enlaceProyectos').addEventListener('click', function () {
-      this.classList.add('animacion-detenida');
-    });
-    const btnInicio = document.getElementById('btnInicio');
+      window.history.scrollRestoration = "manual";
+      window.scrollTo(0, 0);
+      document.getElementById('enlaceProyectos').addEventListener('click', function () {
+        this.classList.add('animacion-detenida');
+      });
+      const btnInicio = document.getElementById('btnInicio');
 
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > window.innerHeight / 2) {
-        btnInicio.style.opacity = 1;
-        btnInicio.style.visibility = 'visible';
-      } else {
-        btnInicio.style.opacity = 0;
-        btnInicio.style.visibility = 'hidden';
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > window.innerHeight / 2) {
+          btnInicio.style.opacity = 1;
+          btnInicio.style.visibility = 'visible';
+        } else {
+            btnInicio.style.opacity = 0;
+            btnInicio.style.visibility = 'hidden';
+          }
+        });
+      btnInicio.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth'});
+      });
+      const traducciones = {
+        es: {
+          saludo: '<span class="cyan">Hola </span> me llamo<br><span class="cyan"> Climent Rafecas </span>',
+          "intro-texto": 'En mi página encontrarás:',
+          indice1: 'Breve presentación personal',
+          indice2: 'Tecnologías trabajadas',
+          indice3: 'Proyectos destacados',
+          "mensaje-copiado": '¡Copiado!',
+          descargarCV: 'Descargar CV',
+          acercaDe: '<span class="cyan">Algo acerca de mi...</span>',
+          presentacion: `Con 18 años de experiencia en el sector industrial, he trabajado como oficial de producción y liderado equipos en empresas de alto nivel, colaborando muy activamente con los departamentos de informática e innovación. Actualmente, estoy en plena transición profesional hacia el ámbito puramente tecnológico, formándome como Técnico Superior en Desarrollo de Aplicaciones Multiplataforma (DAM) como base sólida para este cambio. Mi objetivo es especializarme en el mundo de los datos y la inteligencia artificial, combinándolo con mi fuerte interés en la programación, la automatización y el desarrollo tecnológico. Me definen la alta motivación, el temperamento resiliente, las ganas de seguir aprendiendo, la autonomía y una demostrada facilidad de adaptación. Poseo además un perfil polivalente y una sólida capacidad para trabajar en equipo. Gracias a mi experiencia en entornos colaborativos, he podido aprender y aplicar metodologías de gestión de proyectos como Scrum o Kanban y principios de mejora continua como Lean Manufacturing y Six Sigma, desarrollado habilidades de organización, comunicación y gestión de proyectos, esenciales y totalmente trasladables a mi transición al mundo tech.`,
+          "tecnologias-trabajadas": '<span class="cyan" id="tecnologias">Tecnologías trabajadas</span>',
+          lenguajes: 'Lenguajes',
+          metodologiasA: 'Metodologías ágiles',
+          metodologiasY: 'y',
+          metodologiasP: 'productividad',
+          visualizacion: 'Visualización y análisis de datos',
+          BD: 'Bases de datos',
+          proyectosD: '<span class="cyan">Proyectos destacados</span>',
+          tituloPP: 'Portafolio profesional',
+          descripcionPP: 'Web personal desarrollada desde cero como portafolio profesional, donde ofrezco una breve presentación, muestro mis trabajos y conocimientos',
+          verTodos: 'Ver todos los proyectos'
+        },
+        en: {
+          saludo: '<span class="cyan">Hi </span> I\'m<br><span class="cyan"> Climent Rafecas </span>',
+          "intro-texto": 'On my website you will find:',
+          indice1: 'Brief personal introduction',
+          indice2: 'Technologies I work with',
+          indice3: 'Highlighted projects',
+          "mensaje-copiado": 'Copied!',
+          descargarCV: 'Download CV',
+          acercaDe: '<span class="cyan">A bit about me...</span>',
+          presentacion: `With 18 years of experience in the industrial sector, I've worked as a production operator and team leader in top-tier companies, closely collaborating with IT and innovation departments. I'm currently undergoing a full career shift into the tech world, building a solid foundation by studying a Higher Technician degree in Multiplatform Application Development (DAM). My goal is to specialize in data and artificial intelligence, combining it with my strong interest in programming, automation, and technological development. I'm defined by high motivation, a resilient attitude, continuous learning drive, autonomy, and proven adaptability. I also bring a versatile profile and strong teamwork skills. Through my experience in collaborative environments, I've learned and applied project management methodologies such as Scrum and Kanban, as well as continuous improvement principles like Lean Manufacturing and Six Sigma. This has helped me develop solid organizational, comunication, and project management skills-essential and fully transferable to the tech world.`,
+          "tecnologias-trabajadas": '<span class="cyan" id="tecnologias">Technologies I work with</span>',
+          lenguajes: 'Languages',
+          metodologiasA: 'Agile methodologies',
+          metodologiasY: 'and',
+          metodologiasP: 'productivity',
+          visualizacion: 'Visualization and data analysis',
+          BD: 'Databases',
+          proyectosD: '<span class="cyan">Highlighted projects</span>',
+          tituloPP: 'Professional portfolio',
+          descripcionPP: 'Personal website build from scratch as a professional portfolio, where I offer a brief introduction and showcase my projects and skills.',
+          verTodos: 'Show all projects'
+        }
+      };
+      document.querySelectorAll('.idioma-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+        const lang = btn.dataset.lang;
+        traducirPagina(lang);
+
+        document.querySelectorAll('.idioma-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        });
+      });
+      function traducirPagina(idioma) {
+        const elementos = document.querySelectorAll('[data-i18n]');
+        elementos.forEach(el => {
+          const clave = el.dataset.i18n;
+          if (traducciones[idioma] && traducciones[idioma][clave]) {
+            el.innerHTML = traducciones[idioma][clave];
+          }
+        });
       }
-    });
-    btnInicio.addEventListener('click', () => {
-      window.scrollTo({ top: 0, behavior: 'smooth'});
-    });
-const traducciones = {
-  es: {
-    saludo: '<span class="cyan">Hola </span> me llamo<br><span class="cyan"> Climent Rafecas </span>',
-    "intro-texto": 'En mi página encontrarás:',
-    indice1: 'Breve presentación personal',
-    indice2: 'Tecnologías trabajadas',
-    indice3: 'Proyectos destacados',
-    "mensaje-copiado": '¡Copiado!',
-    descargarCV: 'Descargar CV',
-    acercaDe: '<span class="cyan">Algo acerca de mi...</span>',
-    presentacion: `Con 18 años de experiencia en el sector industrial, he trabajado como oficial de producción y liderado equipos en empresas de alto nivel, colaborando muy activamente con los departamentos de informática e innovación. Actualmente, estoy en plena transición profesional hacia el ámbito puramente tecnológico, formándome como Técnico Superior en Desarrollo de Aplicaciones Multiplataforma (DAM) como base sólida para este cambio. Mi objetivo es especializarme en el mundo de los datos y la inteligencia artificial, combinándolo con mi fuerte interés en la programación, la automatización y el desarrollo tecnológico. Me definen la alta motivación, el temperamento resiliente, las ganas de seguir aprendiendo, la autonomía y una demostrada facilidad de adaptación. Poseo además un perfil polivalente y una sólida capacidad para trabajar en equipo. Gracias a mi experiencia en entornos colaborativos, he podido aprender y aplicar metodologías de gestión de proyectos como Scrum o Kanban y principios de mejora continua como Lean Manufacturing y Six Sigma, desarrollado habilidades de organización, comunicación y gestión de proyectos, esenciales y totalmente trasladables a mi transición al mundo tech.`,
-    "tecnologias-trabajadas": '<span class="cyan" id="tecnologias">Tecnologías trabajadas</span>',
-    lenguajes: 'Lenguajes',
-    metodologiasA: 'Metodologías ágiles',
-    metodologiasY: 'y',
-    metodologiasP: 'productividad',
-    visualizacion: 'Visualización y análisis de datos',
-    BD: 'Bases de datos',
-    proyectosD: '<span class="cyan">Proyectos destacados</span>',
-    tituloPP: 'Portafolio profesional',
-    descripcionPP: 'Web personal desarrollada desde cero como portafolio profesional, donde ofrezco una breve presentación, muestro mis trabajos y conocimientos',
-    verTodos: 'Ver todos los proyectos'
-  },
-  en: {
-    saludo: '<span class="cyan">Hi </span> I\'m<br><span class="cyan"> Climent Rafecas </span>',
-    "intro-texto": 'On my website you will find:',
-    indice1: 'Brief personal introduction',
-    indice2: 'Technologies I work with',
-    indice3: 'Highlighted projects',
-    "mensaje-copiado": 'Copied!',
-    descargarCV: 'Download CV',
-    acercaDe: '<span class="cyan">A bit about me...</span>',
-    presentacion: `With 18 years of experience in the industrial sector, I've worked as a production operator and team leader in top-tier companies, closely collaborating with IT and innovation departments. I'm currently undergoing a full career shift into the tech world, building a solid foundation by studying a Higher Technician degree in Multiplatform Application Development (DAM). My goal is to specialize in data and artificial intelligence, combining it with my strong interest in programming, automation, and technological development. I'm defined by high motivation, a resilient attitude, continuous learning drive, autonomy, and proven adaptability. I also bring a versatile profile and strong teamwork skills. Through my experience in collaborative environments, I've learned and applied project management methodologies such as Scrum and Kanban, as well as continuous improvement principles like Lean Manufacturing and Six Sigma. This has helped me develop solid organizational, comunication, and project management skills-essential and fully transferable to the tech world.`,
-    "tecnologias-trabajadas": '<span class="cyan" id="tecnologias">Technologies I work with</span>',
-    lenguajes: 'Languages',
-    metodologiasA: 'Agile methodologies',
-    metodologiasY: 'and',
-    metodologiasP: 'productivity',
-    visualizacion: 'Visualization and data analysis',
-    BD: 'Databases',
-    proyectosD: '<span class="cyan">Highlighted projects</span>',
-    tituloPP: 'Professional portfolio',
-    descripcionPP: 'Personal website build from scratch as a professional portfolio, where I offer a brief introduction and showcase my projects and skills.',
-    verTodos: 'Show all projects'
-  }
-};
-document.querySelectorAll('.idioma-btn').forEach(btn => {
-  btn.addEventListener('click', () => {
-    const lang = btn.dataset.lang;
-    traducirPagina(lang);
+      window.addEventListener("DOMContentLoaded", () => {
+        if (window.location.hash) {
+          history.replaceState(null,null, window.location.pathname);
+        }
+        window.scrollTo(0, 0);
+      });
+      document.addEventListener("DOMContentLoaded", () => {
+      const secciones = document.querySelectorAll('.seccion');
 
-    document.querySelectorAll('.idioma-btn').forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-  });
-});
-function traducirPagina(idioma) {
-  const elementos = document.querySelectorAll('[data-i18n]');
-  elementos.forEach(el => {
-    const clave = el.dataset.i18n;
-    if (traducciones[idioma] && traducciones[idioma][clave]) {
-      el.innerHTML = traducciones[idioma][clave];
-    }
-  });
-}
-window.addEventListener("DOMContentLoaded", () => {
-  if (window.location.hash) {
-    history.replaceState(null,null, window.location.pathname);
-  }
-  window.scrollTo(0, 0);
-});
+        const observer = new IntersectionObserver((entries, observer) => {
+          entries.forEach(entry => {
+            if(entry.isIntersecting){
+              entry.target.classList.add('visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.2 });
+
+        secciones.forEach(seccion => observer.observe(seccion));
+      });
     </script>
   </body>
 </html>

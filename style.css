@@ -38,6 +38,11 @@ body {
   outline: none;
 }
 
+.idioma-btn.active {
+  background-color: cyan;
+  color: black;
+}
+
 .presentacionli {
   text-decoration: none;
   color: white;
@@ -406,6 +411,14 @@ body {
   font-family: 'Libertinus Math', serif;
 }
 
+.seccion {
+  opacity: 0;
+}
+
+.seccion.visible {
+  animation: fadeInOnly 2s ease-out forwards !important;
+}
+
 .grid-proyectos {
   display: grid;
   grid-template-columns: repeat(2, minmax(300px, 1fr));
@@ -675,6 +688,15 @@ body {
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes fadeInOnly {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 
