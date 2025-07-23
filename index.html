@@ -342,6 +342,8 @@
         const lang = btn.dataset.lang;
         traducirPagina(lang);
 
+        localStorage.setItem('idiomaPreferido', lang);
+
         document.querySelectorAll('.idioma-btn').forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
         });
@@ -362,6 +364,12 @@
         document.querySelectorAll('.idioma-btn').forEach(btn => {
           btn.classList.toggle('active', btn.dataset.lang === idiomaGuardado)
         });
+      } else {
+        const botonEs = document.querySelector('idioma-btn[data-lang="es"]');
+        if (botonEs) {
+          botonEs.classList.add('active');
+        }
+        traducirPagina('es');
       }
 
       window.addEventListener("DOMContentLoaded", () => {
