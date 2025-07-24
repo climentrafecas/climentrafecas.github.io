@@ -393,23 +393,6 @@
 
         secciones.forEach(seccion => observer.observe(seccion));
       });
-
-
-
-
-
-      window.addEventListener('DOMContentLoaded', () => {
-  // Elementos que quieres que aparezcan con fadeIn
-  const elementosFadeIn = document.querySelectorAll('.centro-contenedor, .social-icons');
-
-  elementosFadeIn.forEach(el => {
-    el.classList.add('fade-in'); // Aplica la clase inicial
-    // Forzar reflow para que el efecto se dispare incluso si ya se cargó antes
-    void el.offsetWidth;
-    el.classList.add('show'); // Dispara la transición
-  });
-});
-
     </script>
   </body>
 </html>
