@@ -669,7 +669,7 @@ body {
 #btnInicio:hover {
   background-color: rgba(0, 255, 255, 0.2);
   box-shadow: 0 0 10px cyan;
-  }
+}
 
 @keyframes guiño {
   0%, 100% {
