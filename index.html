@@ -393,6 +393,16 @@
 
         secciones.forEach(seccion => observer.observe(seccion));
       });
+
+      window.addEventListener('DOMContentLoaded', () => {
+        const elementosFadeIn = document.querySelectorAll('.centro-contenedor, .social-icons');
+
+        elementosFadeIn.forEach(el => {
+          el.classList.add('fade-in');
+          void el.offsetWidth;
+          el.classList.add('show');
+        });
+      });
     </script>
   </body>
 </html>
