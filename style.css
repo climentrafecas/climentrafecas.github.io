@@ -106,7 +106,7 @@ body {
   align-items: center;
   gap: 120px;
   margin-top: 50px;
-  animation: fadeInUp 10s ease-out forwards;
+  animation: fadeInUp 0.8s ease-out forwards;
   opacity: 0;
 }
 
@@ -550,7 +550,7 @@ body {
   justify-content: center;
   gap: 45px;
   margin-top: 60px;
-  animation: fadeInUp 10s ease-out forwards;
+  animation: fadeInUp 0.8s ease-out forwards;
   opacity: 0;
 }
 
