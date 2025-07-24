@@ -393,6 +393,25 @@
 
         secciones.forEach(seccion => observer.observe(seccion));
       });
+
+
+
+
+      document.addEventListener("DOMContentLoaded", () => {
+  const seccion = document.getElementById("principal");
+
+  if (seccion) {
+    // Reiniciamos la animación quitando y volviendo a aplicar la clase
+    seccion.classList.remove("fade-in");
+
+    // Forzamos reflujo (hack muy fiable en Chrome para resetear transiciones)
+    void seccion.offsetWidth;
+
+    // Ahora volvemos a aplicar
+    seccion.classList.add("fade-in");
+  }
+});
+
     </script>
   </body>
 </html>
