@@ -397,19 +397,17 @@
 
 
 
-      document.addEventListener("DOMContentLoaded", () => {
-  const seccion = document.getElementById("principal");
 
-  if (seccion) {
-    // Reiniciamos la animación quitando y volviendo a aplicar la clase
-    seccion.classList.remove("fade-in");
+      window.addEventListener('DOMContentLoaded', () => {
+  // Elementos que quieres que aparezcan con fadeIn
+  const elementosFadeIn = document.querySelectorAll('.centro-contenedor, .social-icons');
 
-    // Forzamos reflujo (hack muy fiable en Chrome para resetear transiciones)
-    void seccion.offsetWidth;
-
-    // Ahora volvemos a aplicar
-    seccion.classList.add("fade-in");
-  }
+  elementosFadeIn.forEach(el => {
+    el.classList.add('fade-in'); // Aplica la clase inicial
+    // Forzar reflow para que el efecto se dispare incluso si ya se cargó antes
+    void el.offsetWidth;
+    el.classList.add('show'); // Dispara la transición
+  });
 });
 
     </script>
