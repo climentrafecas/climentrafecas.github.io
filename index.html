@@ -394,13 +394,12 @@
         secciones.forEach(seccion => observer.observe(seccion));
       });
 
-      window.addEventListener('DOMContentLoaded', () => {
-        const elementosFadeIn = document.querySelectorAll('.centro-contenedor, .social-icons');
-
-        elementosFadeIn.forEach(el => {
-          el.classList.add('fade-in');
+      window.addEventListener('pageshow', () => {
+        const elementos = document.querySelectorAll('.centro-contenedor, .social-icons');
+        elementos.forEach(el => {
+          el.classList.add('reiniciar-animacion');
           void el.offsetWidth;
-          el.classList.add('show');
+          el.classList.remove('reiniciar-animacion');
         });
       });
     </script>
