@@ -393,15 +393,6 @@
 
         secciones.forEach(seccion => observer.observe(seccion));
       });
-
-      window.addEventListener('pageshow', () => {
-        const elementos = document.querySelectorAll('.centro-contenedor, .social-icons');
-        elementos.forEach(el => {
-          el.classList.add('reiniciar-animacion');
-          void el.offsetWidth;
-          el.classList.remove('reiniciar-animacion');
-        });
-      });
     </script>
   </body>
 </html>

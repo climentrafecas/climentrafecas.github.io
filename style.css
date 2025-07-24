@@ -632,10 +632,6 @@ body {
   color: inherit !important;
 }
 
-.reiniciar-animacion {
-  animation: none !important;
-}
-
 #mensaje-copiado {
   position: absolute;
   top: -35px;
