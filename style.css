@@ -730,23 +730,3 @@ body {
     filter: drop-shadow(0 0 0px white);
   }
 }
-
-@media (max-width: 1280px) {
-  .centro-contenedor {
-    flex-direction: column;
-    gap: 60px; /* era 120px, se reduce solo para laptops */
-  }
-
-  .social-icons {
-    margin-top: 30px; /* antes 60px, evita el corte */
-  }
-
-  .centro-contenedor img {
-    width: 320px; /* antes 400px, solo se reduce en laptop */
-  }
-
-  .intro {
-    text-align: center; /* mejora alineación en vertical */
-    font-size: 1.7rem; /* ajustamos ligeramente solo para laptop */
-  }
-}
