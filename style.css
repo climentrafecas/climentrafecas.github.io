@@ -730,3 +730,18 @@ body {
     filter: drop-shadow(0 0 0px white);
   }
 }
+
+@media (max-width: 1280px) {
+  .centro-contenedor {
+    gap: 80px;
+  }
+  .centro-contenedor img {
+    width: 320px;
+  }
+  .intro {
+    font-size: 1.6rem;
+  }
+  .social-icons {
+    margin-top: 40px;
+  }
+}
