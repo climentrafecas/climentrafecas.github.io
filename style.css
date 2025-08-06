@@ -744,6 +744,10 @@ body {
   .social-icons {
     margin-top: 40px;
   }
+  .presentacion-personal {
+    margin-top: 200px;
+    margin-bottom: 80px;
+  }
   .nucleo-lenguajes,
   .nucleo-metodologias,
   .nucleo-visualizacion,
@@ -779,52 +783,49 @@ body {
   }
   .nucleo-lenguajes .iconos-contenedor .icono {
     font-size: 2.5rem;
-  }
-  
+  }  
   .categoria-texto {
     font-size: 1.2rem;
     margin-bottom: 20px;
   }
   .contenedor-esferas {
     gap: 50px;
-    margin-top: 60px;
+    margin-top: 50px;
   }
   .esferas-superiores,
   .esferas-inferiores {
-    gap: 50px;
+    gap: 60px;
     height: 300px;
+    margin-bottom: 40px;
   }
   .tecnologias-dominadas {
     font-size: 1.3rem;
     margin-top: 150px;
   }
-
-
-
+  .proyectos-destacados {
+    margin-top: 150px;
+  }
   .tecnologias-utilizadas,
   .descripcion-proyecto {
     position: static;
     transform: none;
     margin-top: 20px;
-  }
-
+  } 
   .descripcion-proyecto {
-    margin-bottom: 20px;
+    margin-bottom: -150px;
     margin-top: -20px;
     white-space: normal;
     overflow-wrap: break-word;
     max-width: 50ch;
     width: 100vw;
   }
-
   .tarjeta-proyecto {
     align-items: center;
+    margin-top: -100px;
   }
-
   .tecnologias-utilizadas .icono {
     margin-right: 0.5rem;
   }
-
   .nombre-proyecto {
     position: static;
     transform: none;
@@ -832,16 +833,13 @@ body {
     background: none;
     padding: 0;
   }
-
   .recuadro-imagen {
     animation: pulse 2.5s infinite ease-in-out;
   }
-
   .recuadro-imagen:hover:not(:active) {
     animation-duration: 12s;
     box-shadow: 0 0 20px cyan, 0 0 40px cyan, 0 0 60px cyan;
   }
-
   .recuadro-imagen:active {
     box-shadow: 0 0 8px cyan, 0 0 16px cyan;
     transition: box-shadow 0.1s ease;
