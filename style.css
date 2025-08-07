@@ -845,3 +845,36 @@ body {
     transition: box-shadow 0.1s ease;
   }
 }
+
+@media (max-width: 768px) {
+  html, body {
+    overflow-x: hidden;
+  }
+  .presentacion-personal,
+  .contenedor-esferas,
+  .proyectos-destacados,
+  .tarjeta-proyecto,
+  .descripcion-proyecto {
+    max-width: 100%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  img, video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  .centro-contenedor {
+    max-width: 100%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
