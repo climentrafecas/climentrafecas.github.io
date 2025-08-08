@@ -869,6 +869,80 @@ body {
     display: block;
   }
   .centro-contenedor {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 0 20px;
+    margin: 0 auto;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  .centro-contenedor img {
+    width: 180px;
+    height: auto;
+  }
+  .intro {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    text-align: left;
+  }
+  .intro h1 {
+    font-size: 1.8rem;
+    line-height: 1.3;
+    margin-bottom: 10px;
+  }
+  .intro ul {
+    margin: 10px 0;
+    padding-left: 20px;
+  }
+  .intro li {
+    margin-bottom: 6px;
+  }
+  .correo-destacado {
+    font-size: 1rem;
+    word-break: break-word;
+  }
+  .btn-descarga {
+    margin-top: 10px;
+    font-size: 1rem;
+    padding: 6px 12px;
+    
+  }
+  .social-icons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  .btn-descarga:hover {
+    background-color: transparent !important;
+    color: cyan !important;
+    box-shadow: none !important;
+    animation: none !important;
+  }
+  .btn-descarga:active {
+    transform: none !important;
+    box-shadow: none !important;
+  }
+  .btn-descarga.clicked {
+    animation: none !important;
+  }
+  .social-icons a:hover {
+    color: inherit !important;
+  }  
+}
+
+@media (max-width: 768px) and (orientation: portrait) {
+  html, body {
+    overflow-x: hidden;
+  }
+  .presentacion-personal,
+  .contenedor-esferas,
+  .proyectos-destacados,
+  .tarjeta-proyecto,
+  .descripcion-proyecto {
     max-width: 100%;
     width: 100%;
     margin-left: auto;
@@ -877,4 +951,148 @@ body {
     padding-left: 10px;
     padding-right: 10px;
   }
+  img, video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  .centro-contenedor {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 0 20px;
+    margin: 0 auto;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin-top: 200px;
+  }
+  .centro-contenedor img {
+    width: 250px;
+    height: auto;
+  }
+  .intro {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    text-align: left;
+  }
+  .intro h1 {
+    font-size: 1.8rem;
+    line-height: 1.3;
+    margin-bottom: 10px;
+  }
+  .intro ul {
+    margin: 10px 0;
+    padding-left: 20px;
+  }
+  .intro li {
+    margin-bottom: 6px;
+  }
+  .correo-destacado {
+    font-size: 1.2rem;
+    word-break: break-word;
+  }
+  .btn-descarga {
+    margin-top: 10px;
+    font-size: 1rem;
+    padding: 6px 12px;
+  }
+  .social-icons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  .presentacion-personal {
+    margin-top: 250px;
+  }
+  .btn-descarga:hover {
+    background-color: transparent !important;
+    color: cyan !important;
+    box-shadow: none !important;
+    animation: none !important;
+  }
+  .btn-descarga:active {
+    transform: none !important;
+    box-shadow: none !important;
+  }
+  .btn-descarga.clicked {
+    animation: none !important;
+  }
+  .social-icons a:hover {
+    color: inherit !important;
+  }
+
+
+
+  .contenedor-esferas {
+    gap: 18px;
+    margin-top: 40px;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .esferas-superiores, 
+  .esferas-inferiores {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    width: 100%;
+    height: auto;
+  }
+
+  /* ESTILOS ORIGINALES DE TUS ESFERAS (MANTIENE FORMA/COLOR/SOMBRA) */
+  .esferas-superiores > div,
+  .esferas-inferiores > div {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* Añade aquí cualquier otro estilo visual tuyo */
+    margin: 0 !important; /* Elimina márgenes externos */
+    padding: 10px; /* Espacio interno para que no toquen bordes */
+  }
+
+  /* NÚCLEO DE LA SOLUCIÓN */
+  .esferas-superiores > div {
+    flex: 0 0 calc(50% - 20px); /* 2 por fila (50% - mitad del gap) */
+    box-sizing: border-box;
+    max-width: 250px;
+  }
+
+  .esferas-inferiores > div {
+    flex: 0 0 calc(50% - 20px);
+    box-sizing: border-box;
+    max-width: 250px;
+  }
+
+  /* ÚLTIMA ESFERA CENTRADA */
+  .esferas-inferiores > div:last-child {
+    flex: 0 0 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .nucleo-metodologias .iconos-contenedor .icono {
+    font-size: 2rem;
+  }
+  .nucleo-visualizacion .iconos-contenedor .icono {
+    font-size: 2rem;
+  }
+  .nucleo-bases .icono {
+    font-size: 1rem;
+  }
+  .nucleo-cloud .icono {
+    font-size: 1rem;
+  }
+  .nucleo-lenguajes .iconos-contenedor .icono {
+    font-size: 1rem;
+  }  
+
 }
