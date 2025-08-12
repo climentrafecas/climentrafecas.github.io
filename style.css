@@ -945,11 +945,11 @@ body {
   .descripcion-proyecto {
     max-width: 100%;
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 0px;
+    margin-right: 0px;
     box-sizing: border-box;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
   img, video {
     max-width: 100%;
@@ -1023,9 +1023,6 @@ body {
   .social-icons a:hover {
     color: inherit !important;
   }
-
-
-
   .contenedor-esferas {
     gap: 18px;
     margin-top: 40px;
@@ -1034,7 +1031,6 @@ body {
     flex-direction: column;
     align-items: center;
   }
-
   .esferas-superiores, 
   .esferas-inferiores {
     display: flex;
@@ -1044,8 +1040,6 @@ body {
     width: 100%;
     height: auto;
   }
-
-  /* ESTILOS ORIGINALES DE TUS ESFERAS (MANTIENE FORMA/COLOR/SOMBRA) */
   .esferas-superiores > div,
   .esferas-inferiores > div {
     width: 250px;
@@ -1054,31 +1048,24 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* Añade aquí cualquier otro estilo visual tuyo */
-    margin: 0 !important; /* Elimina márgenes externos */
-    padding: 10px; /* Espacio interno para que no toquen bordes */
+    margin: 0 !important;
+    padding: 10px;
   }
-
-  /* NÚCLEO DE LA SOLUCIÓN */
   .esferas-superiores > div {
-    flex: 0 0 calc(50% - 20px); /* 2 por fila (50% - mitad del gap) */
+    flex: 0 0 calc(50% - 20px);
     box-sizing: border-box;
     max-width: 250px;
   }
-
   .esferas-inferiores > div {
     flex: 0 0 calc(50% - 20px);
     box-sizing: border-box;
     max-width: 250px;
   }
-
-  /* ÚLTIMA ESFERA CENTRADA */
   .esferas-inferiores > div:last-child {
     flex: 0 0 100%;
     text-align: center;
     margin-top: 20px;
   }
-
   .nucleo-metodologias .iconos-contenedor .icono {
     font-size: 2rem;
   }
@@ -1093,6 +1080,21 @@ body {
   }
   .nucleo-lenguajes .iconos-contenedor .icono {
     font-size: 1rem;
-  }  
-
+  }
+  #btnInicio {
+    pointer-events: auto;
+  }
+  #btnInicio:hover {
+    background-color: inherit;
+    box-shadow: none;
+    opacity: 1;
+    transition: none;
+  }
+  .recuadro-imagen:hover {
+    animation-duration: 2.5s !important;
+    box-shadow: 0 0 15px cyan, 0 0 30px cyan !important;
+  }
+  .recuadro-imagen:hover img {
+    transform: none !important;
+  }
 }
