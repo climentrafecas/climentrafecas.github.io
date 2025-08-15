@@ -1237,65 +1237,56 @@ body {
     overflow-x: hidden;
     margin: 10px;
   }
-.centro-contenedor {
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;            /* mantenemos el mismo gap */
-  margin-top: 20px;
-  padding: 0 10px;
-}
-
-.centro-contenedor img {
-  width: 55%;           /* proporcional al contenedor */
-  max-width: 200px;     /* mismo máximo que tenías */
-  height: auto;
-}
-
-.intro {
-  font-size: clamp(0.95rem, 4vw, 1.1rem); /* proporcional en móviles */
-  line-height: 1.4;
-  text-align: center;
-  max-width: 90%;
-}
-
-.intro h1 {
-  font-size: clamp(1.5rem, 5vw, 1.8rem);  /* proporcional */
-  line-height: 1.3;
-  margin-bottom: 10px;
-}
-
-.intro ul {
-  margin: 10px;
-  padding-left: 20px;
-  text-align: left;
-}
-
-.intro li {
-  margin-bottom: 6px;
-}
-
-.intro-texto {
-  font-size: clamp(1rem, 4vw, 1.3rem);    /* proporcional */
-}
-
-.correo-destacado {
-  font-size: clamp(1rem, 4vw, 1.2rem);    /* proporcional */
-  word-break: break-word;
-}
-
-.btn-descarga {
-  margin-top: 10px;
-  font-size: clamp(0.9rem, 3vw, 1rem);    /* proporcional */
-  padding: 6px 12px;
-}
-
-.social-icons {
-  margin-top: 30px;
-  display: flex;
-  justify-content: center;
-  gap: 30px;                                /* mismo gap que tenías */
-}
+  .centro-contenedor {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    padding: 0 10px;
+  }
+  .centro-contenedor img {
+    width: 55%;
+    max-width: 200px;
+    height: auto;
+  }
+  .intro {
+    font-size: 1.1rem;
+    line-height: 1.4;
+    text-align: center;
+    max-width: 90%;
+  }
+  .intro h1 {
+    font-size: 1.8rem;
+    line-height: 1.3;
+    margin-bottom: 10px;
+  }
+  .intro ul {
+    margin: 10px;
+    padding-left: 20px;
+    text-align: left;
+  }
+  .intro li {
+    margin-bottom: 6px;
+  }
+  .intro-texto {
+    font-size: 1.3rem;
+  }
+  .correo-destacado {
+    font-size: 1.2rem;
+    word-break: break-word;
+  }
+  .btn-descarga {
+    margin-top: 10px;
+    font-size: 1rem;
+    padding: 6px 12px;
+  }
+  .social-icons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
   .presentacion-personal {
     font-size: 1rem;
     margin-top: 150px;
