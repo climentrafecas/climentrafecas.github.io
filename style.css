@@ -1232,7 +1232,7 @@ body {
   }
 }
 
-@media (max-width: 390px) and (orientation: portrait) {
+@media (max-width: 500px) and (orientation: portrait) {
   html, body {
     overflow-x: hidden;
     margin: 10px;
