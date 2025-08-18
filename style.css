@@ -1230,6 +1230,11 @@ body {
     justify-content: center;
     gap: 20px;
   }
+  .repositorio {
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
 }
 
 @media (max-width: 500px) and (orientation: portrait) {
@@ -1322,5 +1327,10 @@ body {
     align-items: center;
     gap: 0.3rem;
     white-space: nowrap;
+  }
+  .repositorio {
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
   }
 }
