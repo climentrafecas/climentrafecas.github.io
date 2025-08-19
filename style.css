@@ -1343,6 +1343,8 @@ body {
     gap: 40px;
     margin-top: -30px;
     padding: 0 10px;
+    animation: none !important;
+    opacity: 1 !important;
   }
   .centro-contenedor img {
     width: 55%;
@@ -1385,5 +1387,65 @@ body {
     display: flex;
     justify-content: center;
     gap: 30px;
+  }
+  .presentacion-personal {
+    font-size: 1.5rem;
+    margin-top: 150px;
+    animation: none !important;
+    opacity: 1 !important;
+  }
+  .tecnologias-dominadas {
+    font-size: 1.5rem;
+    animation: none !important;
+    opacity: 1 !important;
+  }
+  .proyectos-destacados {
+    font-size: 1.5rem;
+    animation: none !important;
+    opacity: 1 !important;
+  }
+  .tarjeta-proyecto .nombre-proyecto {
+    font-size: 1.1rem;
+  }
+  .esferas-superiores > div,
+  .esferas-inferiores > div {
+    width: 325px;
+    height: 325px;
+    flex: 0 0 auto;
+    box-sizing: border-box;
+  }
+  .esferas-inferiores > div:last-child {
+    flex: 0 0 auto;
+    margin-top: 20px;
+  }
+  .nucleo-visualizacion .iconos-contenedor .icono {
+    font-size: 4rem;
+  }
+  .nucleo-bases .icono {
+    font-size: 3rem;
+  }
+  .nucleo-cloud .icono {
+    font-size: 3rem;
+  }
+  .nucleo-lenguajes .iconos-contenedor .icono {
+    font-size: 3rem;
+  }
+  .nucleo-bases .categoria-texto {
+    margin-bottom: -5px;
+  }
+  .nucleo-cloud .categoria-texto {
+    margin-bottom: 0px;
+  }
+  .nucleo-lenguajes .categoria-texto {
+    margin-bottom: 0px;
+  }
+  .nucleo-visualizacion .categoria-texto {
+    margin-bottom: 15px;
+  }
+  .tecnologias-utilizadas .icono {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    white-space: nowrap;
   }
 }
