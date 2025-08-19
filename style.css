@@ -853,37 +853,19 @@ body {
   .tarjeta-proyecto,
   .descripcion-proyecto {
     max-width: 100%;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
     box-sizing: border-box;
     padding-left: 10px;
     padding-right: 10px;
   }
-  img, video {
-    max-width: 100%;
-    height: auto;
-    display: block;
-  }
   .centro-contenedor {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
     gap: 40px;
-    padding: 0 20px;
-    margin: 0 auto;
-    max-width: 100%;
-    box-sizing: border-box;
   }
   .centro-contenedor img {
     width: 300px;
-    height: auto;
   }
   .intro {
     font-size: 1.7rem;
     line-height: 1.5;
-    text-align: left;
   }
   .intro h1 {
     font-size: 2.3rem;
@@ -891,15 +873,10 @@ body {
     margin-bottom: 10px;
   }
   .intro ul {
-    margin: 10px 0;
     padding-left: 20px;
   }
   .intro li {
     margin-bottom: 6px;
-  }
-  .correo-destacado {
-    font-size: 1.5rem;
-    word-break: break-word;
   }
   .btn-descarga {
     margin-top: 10px;
@@ -924,9 +901,6 @@ body {
   }
   .social-icons {
     margin-top: 50px;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
   }
   .social-icons a:hover {
     color: inherit !important;
@@ -953,19 +927,11 @@ body {
   .contenedor-esferas {
     gap: 18px;
     margin-top: 40px;
-    padding: 0 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
   .esferas-superiores, 
   .esferas-inferiores {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 50px;
-    width: 100%;
     height: auto;
+    flex-wrap: wrap;
   }
   .esferas-superiores > div,
   .esferas-inferiores > div {
@@ -993,12 +959,6 @@ body {
     text-align: center;
     margin-top: 20px;
   }
-  .nucleo-metodologias .iconos-contenedor .icono {
-    font-size: 4rem;
-  }
-  .nucleo-visualizacion .iconos-contenedor .icono {
-    font-size: 5rem;
-  }
   .nucleo-bases .icono {
     font-size: 4rem;
   }
@@ -1009,14 +969,12 @@ body {
     font-size: 3.5rem;
   }
   .nucleo-bases .categoria-texto {
-    margin-top: 10px;
     margin-bottom: 0px;
     font-size: 2rem;
   }
   .nucleo-cloud .categoria-texto {
     margin-bottom: 0px;
     font-size: 2rem;
-    margin-top: 10px;
   }
   .nucleo-lenguajes .categoria-texto {
     margin-bottom: 0px;
