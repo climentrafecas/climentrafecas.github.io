@@ -43,16 +43,8 @@ body {
   color: black;
 }
 
-.presentacionli {
-  text-decoration: none;
-  color: white;
-}
-
-.tecnologiasli {
-  text-decoration: none;
-  color: white;
-}
-
+.presentacionli,
+.tecnologiasli,
 .proyectosli {
   text-decoration: none;
   color: white;
@@ -61,7 +53,6 @@ body {
 .btn-descarga {
   display: inline-block;
   padding: 16px 32px;
-  background-color: transparent;
   border: 2px solid cyan;
   color: cyan;
   font-size: 1.2rem;
@@ -90,14 +81,9 @@ body {
 }
 
 .categoria-texto {
-  position: static;
-  color: white;
+  margin-bottom: 30px;
   font-size: 1.5rem;
   font-weight: bold;
-  top: auto;
-  left: auto;
-  transform: none;
-  margin-bottom: 30px;
 }
 
 .centro-contenedor {
@@ -105,20 +91,16 @@ body {
   justify-content: center;
   align-items: center;
   gap: 120px;
-  margin-top: 50px;
   animation: fadeInUp 0.8s ease-out forwards;
   opacity: 0;
 }
 
 .centro-contenedor img {
   width: 400px;
-  height: auto;
-  border-radius: 10px;
 }
 
 .contenedor-copiado {
   position: relative;
-  display: incline-block;
 }
 
 .correo-destacado {
@@ -136,7 +118,6 @@ body {
 }
 
 .intro {
-  text-align: left;
   font-size: 2rem;
   font-family: 'Libertinus Math', serif;
 }
@@ -746,7 +727,6 @@ body {
   }
   .presentacion-personal {
     margin-top: 200px;
-    margin-bottom: 80px;
   }
   .nucleo-lenguajes,
   .nucleo-metodologias,
@@ -755,18 +735,15 @@ body {
   .nucleo-cloud {
     width: 300px;
     height: 300px;
-    margin: 30px auto;
     padding-top: 20px;
   }
   .nucleo-lenguajes .iconos-contenedor,
   .nucleo-metodologias .iconos-contenedor {
     gap: 8px 60px;
-    padding: 0 10px;
     margin-top: 0;
   }
   .nucleo-visualizacion .iconos-contenedor {
     gap: 8px;
-    padding: 0 10px;
     margin-top: -10px;
   }
   .nucleo-metodologias .iconos-contenedor .icono {
@@ -814,8 +791,6 @@ body {
   .descripcion-proyecto {
     margin-bottom: -150px;
     margin-top: -20px;
-    white-space: normal;
-    overflow-wrap: break-word;
     max-width: 50ch;
     width: 100vw;
   }
@@ -830,11 +805,7 @@ body {
     position: static;
     transform: none;
     margin-bottom: 20px;
-    background: none;
     padding: 0;
-  }
-  .recuadro-imagen {
-    animation: pulse 2.5s infinite ease-in-out;
   }
   .recuadro-imagen:hover:not(:active) {
     animation-duration: 12s;
