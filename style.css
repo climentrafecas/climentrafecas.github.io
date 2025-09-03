@@ -428,6 +428,40 @@ body {
   color: #0077b5;
 }
 
+.social-icons a[href*="wa.me"]:hover {
+  color: #25d366;
+}
+
+.social-icons a[href^="tel"] {
+  position: relative;
+  color: white;
+}
+
+.social-icons a[href^="tel"]::after {
+  content: "+34 643 226 017";
+  position: absolute;
+  left: 120%;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.5em;
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 4px 8px;
+  border-radius: 8px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.social-icons a[href^="tel"]:hover {
+  color: cyan;
+}
+
+.social-icons a[href^="tel"]:hover::after {
+  opacity: 1;
+}
+
 .svg-icono svg {
   width: 1em;
   height: 1em;
@@ -746,7 +780,11 @@ body {
   .social-icons a:hover {
     color: inherit !important;
   }
-  .social-icons a:hover {
+  .social-icons a[href^="tel"]:hover::after {
+    display: none !important;
+    content: none !important;
+  }
+  .social-icons a[href^="tel"]:hover {
     color: inherit !important;
   }
   #btnInicio {
@@ -875,6 +913,13 @@ body {
     margin-top: 30px;
     gap: 30px;
   }
+  .social-icons a[href^="tel"]:hover::after {
+    display: none !important;
+    content: none !important;
+  }
+  .social-icons a[href^="tel"]:hover {
+    color: inherit !important;
+  }
   .presentacion-personal {
     margin-top: 250px;
   }
@@ -960,6 +1005,7 @@ body {
   .social-icons a:hover {
     color: inherit !important;
   }
+
   #btnInicio:hover {
     background-color: rgba(255, 255, 255, 0.1);
     box-shadow: none;
